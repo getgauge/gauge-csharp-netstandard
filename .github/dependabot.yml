@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.CodeAnalysis.Common
+    versions:
+    - 3.8.0
+  - dependency-name: Microsoft.CodeAnalysis.CSharp
+    versions:
+    - 3.8.0
